@@ -59,6 +59,7 @@ module SidekiqActiverecord
     # Version of your assets, change this if you want to expire all your assets
     config.assets.version = '1.0'
 
+    config.threadsafe!
     ActiveRecord::Base.logger = Logger.new(STDERR)
   end
 end
